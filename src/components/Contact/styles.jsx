@@ -70,7 +70,7 @@ export const styles = styled.section`
     }
 
 
-    > form > input[type="button"]{
+    > form > input[type="submit"]{
         width: 40%;
         margin-top: 25px;
         cursor: pointer;
