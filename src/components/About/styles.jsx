@@ -31,9 +31,14 @@ export const styles = styled.section`
     }
 
     > section > div{
-        max-width: 300px;
+        width: 300px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(33%);
+
         text-align: center;
-        margin-top: 150px;
     }
 
     > section > div > h2{
@@ -42,5 +47,61 @@ export const styles = styled.section`
 
     > section > div > p{
         line-height: 22px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        > .myPhoto{
+            width: 180px;
+        }
+
+        > section > div{
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        > section > div > h2{
+            font-size: 24px;
+        }
+    
+        > section > div > p{
+            width: 80%;
+            margin-top: 10px;
+
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    @media (max-width: 767px){
+        > .myPhoto{
+            width: 140px;
+            transform: translate(-50%, -20%);
+        }
+
+        > section{
+            flex-direction: row; 
+            gap: 20px;
+        }
+
+        > section > div{
+            max-width: 200px;
+
+            flex-direction: column;
+
+            transform: translateY(30%);
+        }
+
+        > section > div > h2{
+            font-size: 18px;
+        }
+    
+        > section > div > p{
+            width: 80%;
+            margin-top: 10px;
+
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 `

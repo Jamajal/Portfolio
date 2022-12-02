@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const styles = styled.div`
-    width: 28%;
-    height: 443px;
+    width: 25%;
+    height: 410px;
     padding-bottom: 20px;
     
     display: flex;
@@ -14,10 +14,11 @@ export const styles = styled.div`
     background-color: rgba(10, 10, 10, 0.8);
 
     transition: 0.5s;
+    cursor: pointer;
 
     :hover{
         animation-name: heartBeating;
-        animation-duration: 0.8s;
+        animation-duration: 0.6s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-time-function: easy-in-out;
@@ -35,13 +36,16 @@ export const styles = styled.div`
 
     > .card-image-box{
         width: 100%;
+        height: 200px;
         margin-bottom: 10px;
+
+        border-radius: 10px 10px 0 0;
         overflow: hidden;
-        border-radius: 10px;
     }
 
     > .card-image-box > img {
         width: 100%;
+        height: 100%;
         transition: all 1s;
     }
 
@@ -52,16 +56,22 @@ export const styles = styled.div`
     > .project-info{
         padding: 0 10px;
         max-width: 85%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         text-align: center;
         color: white;
     }
 
     > .project-info > p{
+        margin-top: 10px;
         color: #C6C6C6;
     }
 
     > .techs-box{
-        margin: 20px 0;
+        margin-top: 20px;
         padding: 0 10px;
 
         display: flex;
@@ -142,5 +152,93 @@ export const styles = styled.div`
         border-radius: 5px;
 
         cursor: pointer;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        width: 40%;
+        height: 400px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > .card-image-box{
+            width: 100%;
+            height: 180px;
+        }
+
+        > .card-image-box > img{
+            height: 100%;
+        }
+        
+        > .project-info > h1{
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        > .project-info > p {
+            margin-top: 10px;
+
+            font-size: 14px;
+        }
+
+        > .techs-box{
+            gap: 15px;
+        }
+    
+        > .techs-box > .tech{
+            gap: 5px;
+        }
+    
+        > .techs-box > .tech > div{
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    @media (max-width: 767px){
+        width: 40%;
+        height: 320px;
+
+        > .card-image-box{
+            width: 100%;
+            height: 180px;
+        }
+
+        > .card-image-box > img{
+            height: 100%;
+        }
+        
+        > .project-info > h1{
+            width: 80%;
+            align-text: center;
+
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        > .project-info > p {
+            margin-top: 5px;
+
+            font-size: 12px;
+        }
+
+        > .techs-box{
+            margin-top: 10px;
+            gap: 10px;
+        }
+
+        > .techs-box > .tech > div{
+            width: 25px;
+            height: 25px;
+        }
+    
+        > .techs-box > .tech > div > h1{
+            font-size: 14px;
+        }
+    
+        > .techs-box > .tech > label{
+            font-size: 10px;
+        }
     }
 `

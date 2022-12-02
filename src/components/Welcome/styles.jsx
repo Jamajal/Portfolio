@@ -89,5 +89,68 @@ export const styles = styled.section`
         cursor: pointer;
     }
 
+    @media (min-width: 768px) and (max-width: 1023px){
+        > section > .introduction-box > h1{
+            max-width: 80%;
+            line-height: 35px;
+            font-size: 30px;
+        }
 
+        > section > .introduction-box > h3{
+            margin-top: 10px;
+            max-width: 90%;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        > section > .introduction-box > label{
+            font-size: 24px;
+        }
+
+        .buttons{
+            margin-top: 15px;
+            display: flex;
+            gap: 25px;
+        }
+    
+        .buttons > a > img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 767px){
+        > section > .introduction-box{
+            width: 70%;
+            padding: 30px 20px;
+        }
+
+        > section > .introduction-box > h1{
+            max-width: 90%;
+            line-height: 26px;
+            font-size: 24px;
+        }
+
+        > section > .introduction-box > h3{
+            margin-top: 15px;
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        > section > .introduction-box > label{
+            font-size: 18px;
+        }
+
+        .buttons{
+            margin-top: 15px;
+            display: flex;
+            gap: 25px;
+        }
+    
+        .buttons > a > img{
+            width: 40px;
+            height: 40px;
+        }
+    }
 `

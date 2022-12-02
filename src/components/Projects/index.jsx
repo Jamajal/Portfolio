@@ -6,6 +6,7 @@ import { styles as StyledProject } from './styles';
 const Project = () => {
     return(
         <StyledProject id="third-screen" className="nav-space">
+            <ProjectCard />
             <EmptyCard />
         </StyledProject>
     )

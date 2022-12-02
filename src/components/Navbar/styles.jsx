@@ -13,12 +13,15 @@ export const styles = styled.aside`
     justify-content: center;
     gap: 50px;
 
+    z-index: 10;
+
     h1, a{
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
     }
 
     > h1{
+        text-align: center;
         font-size: 30px;
         color: #D41B1B;
     }
@@ -69,5 +72,65 @@ export const styles = styled.aside`
 
     .social-media > a >img{
         width: 100%;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px){
+        > h1{
+            max-width: 100px;
+            font-size: 24px;
+        }
+
+        > nav > a{
+            height: 40px;
+            font-size: 14px;
+        }
+
+        > .social-media{
+            flex-direction: column;
+        }
+
+        > .social-media > a{
+            width: 24px;
+        }
+    }
+
+    @media (max-width: 767px){
+        height: 10%;
+        width: 100%;
+        padding: 0 20px;
+
+        flex-direction: row;
+
+        > h1{
+            width: 80px;
+            font-size: 14px;
+        }
+
+        > nav {
+            width: auto;
+            height: 100%;
+
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        > nav > a{
+            height: 100%;
+            width: 53px;
+            padding: 0 7px;
+
+            font-size: 10px;
+        }
+
+        > .social-media{
+            gap: 10px;
+
+            transform: translateY(0px);
+        }
+
+        > .social-media > a{
+            width: 18px;
+        }
     }
 `

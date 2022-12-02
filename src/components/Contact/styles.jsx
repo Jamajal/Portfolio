@@ -37,6 +37,8 @@ export const styles = styled.section`
     > form > h2{
         font-size: 24px;
         font-weight: 500;
+
+        color: #BBBBBB;
     }
 
     > form > div{
@@ -77,6 +79,78 @@ export const styles = styled.section`
         font-weight: 700;
         border: none;
         background-color: #C83636;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        > form{
+            width: 75%;
+        }
+
+        > form > h1{
+            font-size: 24px;
+        }
+    
+        > form > h2{
+            font-size: 18px;
+        }
+
+        > form > div{
+            margin-top: 15px;
+
+            gap: 15px;
+        }
+    
+        > form input{    
+            font-size: 16px;
+        }
+    
+        > form > input[name="message"]{
+            margin-top: 15px;
+            height: 170px;
+        }
+    
+    
+        > form > input[type="submit"]{
+            width: 40%;
+            margin-top: 15px;
+        }
+    }
+
+    @media (max-width: 767px){
+        > form{
+            width: 75%;
+            padding: 20px;
+        }
+
+        > form > h1{
+            font-size: 20px;
+        }
+    
+        > form > h2{
+            font-size: 16px;
+        }
+
+        > form > div{
+            margin-top: 15px;
+
+            gap: 10px;
+        }
+    
+        > form input{    
+            font-size: 12px;
+        }
+    
+        > form > input[name="message"]{
+            margin-top: 10px;
+            height: 130px;
+        }
+    
+    
+        > form > input[type="submit"]{
+            width: 35%;
+            padding: 7px 10px;
+            margin-top: 15px;
+        }
     }
 `
 

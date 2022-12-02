@@ -9,4 +9,11 @@ export const styles = styled.div`
     .nav-space{
         margin-left: 20%;
     }
+
+    @media (max-width: 767px){
+        .nav-space{
+            margin-left: 0;
+            padding-top: 60px;
+        }
+    }
 `
