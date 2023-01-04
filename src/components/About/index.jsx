@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div>
                     <h2>Atuação</h2>
-                    <p>Já estudei tanto o Frontend como Backend, adquiri uma boa base nas duas áreas e estou disposto a trabalhar em ambas </p>
+                    <p>Comecei a estudar desenvolvimento web em 2021. Já estudei tanto o Frontend como Backend, adquiri uma boa base nas duas áreas e estou disposto a trabalhar em ambas </p>
                 </div>
             </section>
             <section className="bottom-side">

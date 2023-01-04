@@ -16,4 +16,9 @@ export const styles = styled.section`
     background-position: bottom left;
     background-attachment: fixed;
     overflow: auto;
+
+    @media (max-width: 767px){
+        padding: 25px 15px;
+        gap: 20px;
+    }
 `

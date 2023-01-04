@@ -9,9 +9,6 @@ import Nav from '../../components/Navbar';
 import { styles as StyledHome } from './styles';
 
 const Home = () => {
-
-    const [ info, setInfo ] = useState([]);
-
     const navigateWithScroll = () => {
         const navs = document.querySelectorAll(".nav-section");
         const sections = document.querySelectorAll(".nav-space");
@@ -32,12 +29,6 @@ const Home = () => {
 
     useEffect(() => {
         navigateWithScroll();
-
-        fetch("https://api.github.com/users/Jamajal")
-            .then(response => response.json())
-            .then(data => {
-                setInfo(data);
-            })
     }, []);
 
     window.addEventListener('scroll', navigateWithScroll);

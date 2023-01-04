@@ -11,8 +11,8 @@ const ProjectCard = () =>{
                 <img src={cardImage} alt="Geo app" />
             </div>
             <div className="project-info">
-                <h1>Titulo</h1>
-                <p>Descrição do projeto</p>
+                <h1>Título de projeto</h1>
+                <p>Lore ipsum lore ipsum Lore ipsum lore ipsum Lore ipsum lore ipsum Lore ipsum lore</p>
             </div>
             <div className="techs-box">
                 <div className="tech">
@@ -34,9 +34,6 @@ const ProjectCard = () =>{
                     <label>Bootstrap</label>
                 </div>
             </div>
-            <button>
-                Ver mais
-            </button>
         </StyledProjectCard>
     )
 }
