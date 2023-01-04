@@ -24,6 +24,8 @@ const Contact = () => {
             .then(() => {
                 alert('Email enviado com sucesso');
                 setEmail('');
+                setTopic('');
+                setMessage('');
             });
     }
 
